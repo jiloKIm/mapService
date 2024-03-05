@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d5aa18d9f094dad68e4f5a32ed783940 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d5aa18d9f094dad68e4f5a32ed783940" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d5aa18d9f094dad68e4f5a32ed783940 = L.map(
+                "map_d5aa18d9f094dad68e4f5a32ed783940",
+                {
+                    center: [35.878733106497464, 128.645069722639],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_30763f8a20d8918c17e1b5af63c91c67 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d5aa18d9f094dad68e4f5a32ed783940);
+        
+    
+            var circle_marker_060e77fcc5203b7ed29c983431e8beb1 = L.circleMarker(
+                [35.871057, 128.595052],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_d5aa18d9f094dad68e4f5a32ed783940);
+        
+    
+        var popup_33b9106fa8e73e88494687bb9f65db63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c06805cda13822028b90a33c9150fcff = $(`<div id="html_c06805cda13822028b90a33c9150fcff" style="width: 100.0%; height: 100.0%;"><div style="width:100px">대구 금호강</br> 발견날짜:늑대거북</div> </div>`)[0];
+                popup_33b9106fa8e73e88494687bb9f65db63.setContent(html_c06805cda13822028b90a33c9150fcff);
+            
+        
+
+        circle_marker_060e77fcc5203b7ed29c983431e8beb1.bindPopup(popup_33b9106fa8e73e88494687bb9f65db63)
+        ;
+
+        
+    
+    
+            circle_marker_060e77fcc5203b7ed29c983431e8beb1.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a051ae494d69fd81694c3c537b77647 = L.marker(
+                [35.871057, 128.595052],
+                {}
+            ).addTo(map_d5aa18d9f094dad68e4f5a32ed783940);
+        
+    
+        var popup_d5dc0e455a5b1562d9f0e5ab12d749ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7cfd897cace3c060bd8aa8ef1445c93 = $(`<div id="html_e7cfd897cace3c060bd8aa8ef1445c93" style="width: 100.0%; height: 100.0%;"><div style="width:100px">대구 금호강</br> 발견날짜:늑대거북</div> </div>`)[0];
+                popup_d5dc0e455a5b1562d9f0e5ab12d749ca.setContent(html_e7cfd897cace3c060bd8aa8ef1445c93);
+            
+        
+
+        marker_0a051ae494d69fd81694c3c537b77647.bindPopup(popup_d5dc0e455a5b1562d9f0e5ab12d749ca)
+        ;
+
+        
+    
+    
+            marker_0a051ae494d69fd81694c3c537b77647.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_40d8e25b7e63b96418caae164fb490e4 = L.circleMarker(
+                [36.623762, 127.456307],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_d5aa18d9f094dad68e4f5a32ed783940);
+        
+    
+        var popup_52ae0d759fd88e66f5e3c4ea2aa6d0ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abc77b04f53d06ad15120acc5aa4cb0c = $(`<div id="html_abc77b04f53d06ad15120acc5aa4cb0c" style="width: 100.0%; height: 100.0%;"><div style="width:100px">청주 서원구</br> 발견날짜:늑대거북</div> </div>`)[0];
+                popup_52ae0d759fd88e66f5e3c4ea2aa6d0ac.setContent(html_abc77b04f53d06ad15120acc5aa4cb0c);
+            
+        
+
+        circle_marker_40d8e25b7e63b96418caae164fb490e4.bindPopup(popup_52ae0d759fd88e66f5e3c4ea2aa6d0ac)
+        ;
+
+        
+    
+    
+            circle_marker_40d8e25b7e63b96418caae164fb490e4.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9a437919c368e9ebcc18573457f0c45 = L.marker(
+                [36.623762, 127.456307],
+                {}
+            ).addTo(map_d5aa18d9f094dad68e4f5a32ed783940);
+        
+    
+        var popup_440b58a8195329c9ad8736a8ca05939a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48d2f9f4183e9226a25c08729b68decb = $(`<div id="html_48d2f9f4183e9226a25c08729b68decb" style="width: 100.0%; height: 100.0%;"><div style="width:100px">청주 서원구</br> 발견날짜:늑대거북</div> </div>`)[0];
+                popup_440b58a8195329c9ad8736a8ca05939a.setContent(html_48d2f9f4183e9226a25c08729b68decb);
+            
+        
+
+        marker_b9a437919c368e9ebcc18573457f0c45.bindPopup(popup_440b58a8195329c9ad8736a8ca05939a)
+        ;
+
+        
+    
+    
+            marker_b9a437919c368e9ebcc18573457f0c45.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c61e12908fbf1ed351c7b6b37a3648c3 = L.circleMarker(
+                [33.489011, 126.498302],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_d5aa18d9f094dad68e4f5a32ed783940);
+        
+    
+        var popup_9bb9709769487734ee81739334b19c93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3a5b9fdbc4ac1b2212019e1989ff5be = $(`<div id="html_b3a5b9fdbc4ac1b2212019e1989ff5be" style="width: 100.0%; height: 100.0%;"><div style="width:100px">제주도 아파트</br> 발견날짜:늑대거북</div> </div>`)[0];
+                popup_9bb9709769487734ee81739334b19c93.setContent(html_b3a5b9fdbc4ac1b2212019e1989ff5be);
+            
+        
+
+        circle_marker_c61e12908fbf1ed351c7b6b37a3648c3.bindPopup(popup_9bb9709769487734ee81739334b19c93)
+        ;
+
+        
+    
+    
+            circle_marker_c61e12908fbf1ed351c7b6b37a3648c3.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_535b531800fca2aac4125028867cc623 = L.marker(
+                [33.489011, 126.498302],
+                {}
+            ).addTo(map_d5aa18d9f094dad68e4f5a32ed783940);
+        
+    
+        var popup_8ed68959823e2d963fbdf4c307433786 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fba1ec60349a9d29d83e6221389b95b6 = $(`<div id="html_fba1ec60349a9d29d83e6221389b95b6" style="width: 100.0%; height: 100.0%;"><div style="width:100px">제주도 아파트</br> 발견날짜:늑대거북</div> </div>`)[0];
+                popup_8ed68959823e2d963fbdf4c307433786.setContent(html_fba1ec60349a9d29d83e6221389b95b6);
+            
+        
+
+        marker_535b531800fca2aac4125028867cc623.bindPopup(popup_8ed68959823e2d963fbdf4c307433786)
+        ;
+
+        
+    
+    
+            marker_535b531800fca2aac4125028867cc623.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_41d0f4b0dfdbfb1a5ba30e640d1da091 = L.circleMarker(
+                [36.133861, 128.120386],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_d5aa18d9f094dad68e4f5a32ed783940);
+        
+    
+        var popup_0d497304f28e433aa31251e797bb7b19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5512b0ae5ea18570f6bfa8c0ca9e3e6c = $(`<div id="html_5512b0ae5ea18570f6bfa8c0ca9e3e6c" style="width: 100.0%; height: 100.0%;"><div style="width:100px">경상북도 김천</br> 발견날짜:늑대거북</div> </div>`)[0];
+                popup_0d497304f28e433aa31251e797bb7b19.setContent(html_5512b0ae5ea18570f6bfa8c0ca9e3e6c);
+            
+        
+
+        circle_marker_41d0f4b0dfdbfb1a5ba30e640d1da091.bindPopup(popup_0d497304f28e433aa31251e797bb7b19)
+        ;
+
+        
+    
+    
+            circle_marker_41d0f4b0dfdbfb1a5ba30e640d1da091.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a929ffa5ec00502ce3e26f02a6bb532a = L.marker(
+                [36.133861, 128.120386],
+                {}
+            ).addTo(map_d5aa18d9f094dad68e4f5a32ed783940);
+        
+    
+        var popup_2bff6791cfdb9b608890478ed69b25fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19eac27967256694de06d3de38644b1e = $(`<div id="html_19eac27967256694de06d3de38644b1e" style="width: 100.0%; height: 100.0%;"><div style="width:100px">경상북도 김천</br> 발견날짜:늑대거북</div> </div>`)[0];
+                popup_2bff6791cfdb9b608890478ed69b25fd.setContent(html_19eac27967256694de06d3de38644b1e);
+            
+        
+
+        marker_a929ffa5ec00502ce3e26f02a6bb532a.bindPopup(popup_2bff6791cfdb9b608890478ed69b25fd)
+        ;
+
+        
+    
+    
+            marker_a929ffa5ec00502ce3e26f02a6bb532a.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4234e9dc3146976021538a57d8b21697 = L.circleMarker(
+                [35.851169, 127.122394],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_d5aa18d9f094dad68e4f5a32ed783940);
+        
+    
+        var popup_76b684e48e9e31e3bf819fba94b2227b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1ee22b0555f402f43c70fcb0c086c2c = $(`<div id="html_d1ee22b0555f402f43c70fcb0c086c2c" style="width: 100.0%; height: 100.0%;"><div style="width:100px">전주천</br> 발견날짜:늑대거북</div> </div>`)[0];
+                popup_76b684e48e9e31e3bf819fba94b2227b.setContent(html_d1ee22b0555f402f43c70fcb0c086c2c);
+            
+        
+
+        circle_marker_4234e9dc3146976021538a57d8b21697.bindPopup(popup_76b684e48e9e31e3bf819fba94b2227b)
+        ;
+
+        
+    
+    
+            circle_marker_4234e9dc3146976021538a57d8b21697.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ec3dbd01e942a07a0f8e5814ad4bbfb = L.marker(
+                [35.851169, 127.122394],
+                {}
+            ).addTo(map_d5aa18d9f094dad68e4f5a32ed783940);
+        
+    
+        var popup_300dd49e2b1b07ca19cc11efc393e07f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35aa9e1c26ae9f196ba849594d3ca005 = $(`<div id="html_35aa9e1c26ae9f196ba849594d3ca005" style="width: 100.0%; height: 100.0%;"><div style="width:100px">전주천</br> 발견날짜:늑대거북</div> </div>`)[0];
+                popup_300dd49e2b1b07ca19cc11efc393e07f.setContent(html_35aa9e1c26ae9f196ba849594d3ca005);
+            
+        
+
+        marker_9ec3dbd01e942a07a0f8e5814ad4bbfb.bindPopup(popup_300dd49e2b1b07ca19cc11efc393e07f)
+        ;
+
+        
+    
+    
+            marker_9ec3dbd01e942a07a0f8e5814ad4bbfb.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

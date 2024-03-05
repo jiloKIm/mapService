@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_68dab3f20bf4d60fd2a40c5bcfef81da {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_68dab3f20bf4d60fd2a40c5bcfef81da" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_68dab3f20bf4d60fd2a40c5bcfef81da = L.map(
+                "map_68dab3f20bf4d60fd2a40c5bcfef81da",
+                {
+                    center: [35.878733106497464, 128.645069722639],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1752cf017b449aac812ce53e0ada09fa = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_68dab3f20bf4d60fd2a40c5bcfef81da);
+        
+    
+            var circle_marker_5d0d5d2df5c6c7abcf29fdb7e5cd99e7 = L.circleMarker(
+                [35.233499, 126.867745],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_68dab3f20bf4d60fd2a40c5bcfef81da);
+        
+    
+        var popup_831ad56ba92212fe62a7d3d1f083a599 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac32c39657c7581dc4c15678eb83a102 = $(`<div id="html_ac32c39657c7581dc4c15678eb83a102" style="width: 100.0%; height: 100.0%;"><div style="width:100px">운암제</br> 발견날짜:악어거북</div> </div>`)[0];
+                popup_831ad56ba92212fe62a7d3d1f083a599.setContent(html_ac32c39657c7581dc4c15678eb83a102);
+            
+        
+
+        circle_marker_5d0d5d2df5c6c7abcf29fdb7e5cd99e7.bindPopup(popup_831ad56ba92212fe62a7d3d1f083a599)
+        ;
+
+        
+    
+    
+            circle_marker_5d0d5d2df5c6c7abcf29fdb7e5cd99e7.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04ba2e9e4bee9e5b24afd4d645b8c65e = L.marker(
+                [35.233499, 126.867745],
+                {}
+            ).addTo(map_68dab3f20bf4d60fd2a40c5bcfef81da);
+        
+    
+        var popup_db8ecc9568cde33302553e04fb2f3daa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0544d764b721a43d7717bacb1d7ad702 = $(`<div id="html_0544d764b721a43d7717bacb1d7ad702" style="width: 100.0%; height: 100.0%;"><div style="width:100px">운암제</br> 발견날짜:악어거북</div> </div>`)[0];
+                popup_db8ecc9568cde33302553e04fb2f3daa.setContent(html_0544d764b721a43d7717bacb1d7ad702);
+            
+        
+
+        marker_04ba2e9e4bee9e5b24afd4d645b8c65e.bindPopup(popup_db8ecc9568cde33302553e04fb2f3daa)
+        ;
+
+        
+    
+    
+            marker_04ba2e9e4bee9e5b24afd4d645b8c65e.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_598b0e6e2e451a41302bd29ceae8ba73 = L.circleMarker(
+                [35.210282, 126.846122],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_68dab3f20bf4d60fd2a40c5bcfef81da);
+        
+    
+        var popup_39b95c9a2a4401496e2b99e23f43d0c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3ccc8411baa8b1855071e648c37eca7 = $(`<div id="html_f3ccc8411baa8b1855071e648c37eca7" style="width: 100.0%; height: 100.0%;"><div style="width:100px">광주호</br> 발견날짜:악어거북</div> </div>`)[0];
+                popup_39b95c9a2a4401496e2b99e23f43d0c1.setContent(html_f3ccc8411baa8b1855071e648c37eca7);
+            
+        
+
+        circle_marker_598b0e6e2e451a41302bd29ceae8ba73.bindPopup(popup_39b95c9a2a4401496e2b99e23f43d0c1)
+        ;
+
+        
+    
+    
+            circle_marker_598b0e6e2e451a41302bd29ceae8ba73.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b16e2e7d6053411eac41a8cec10f666d = L.marker(
+                [35.210282, 126.846122],
+                {}
+            ).addTo(map_68dab3f20bf4d60fd2a40c5bcfef81da);
+        
+    
+        var popup_d5afc1628b091241420fa49afc302e91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0923913ebfc08bcd3ee222d02dee3f01 = $(`<div id="html_0923913ebfc08bcd3ee222d02dee3f01" style="width: 100.0%; height: 100.0%;"><div style="width:100px">광주호</br> 발견날짜:악어거북</div> </div>`)[0];
+                popup_d5afc1628b091241420fa49afc302e91.setContent(html_0923913ebfc08bcd3ee222d02dee3f01);
+            
+        
+
+        marker_b16e2e7d6053411eac41a8cec10f666d.bindPopup(popup_d5afc1628b091241420fa49afc302e91)
+        ;
+
+        
+    
+    
+            marker_b16e2e7d6053411eac41a8cec10f666d.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_db2f6b120a01692c7a98d6818c57ce6a = L.circleMarker(
+                [35.167784, 126.900621],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_68dab3f20bf4d60fd2a40c5bcfef81da);
+        
+    
+        var popup_c18e983c669aeb0631bb6b063c75401e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19386943369fd00067a46fc2a74eeb4b = $(`<div id="html_19386943369fd00067a46fc2a74eeb4b" style="width: 100.0%; height: 100.0%;"><div style="width:100px">무등산</br> 발견날짜:악어거북</div> </div>`)[0];
+                popup_c18e983c669aeb0631bb6b063c75401e.setContent(html_19386943369fd00067a46fc2a74eeb4b);
+            
+        
+
+        circle_marker_db2f6b120a01692c7a98d6818c57ce6a.bindPopup(popup_c18e983c669aeb0631bb6b063c75401e)
+        ;
+
+        
+    
+    
+            circle_marker_db2f6b120a01692c7a98d6818c57ce6a.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7c1013d0603d312f563f68c14810d5c5 = L.marker(
+                [35.167784, 126.900621],
+                {}
+            ).addTo(map_68dab3f20bf4d60fd2a40c5bcfef81da);
+        
+    
+        var popup_9e7d80eb17dd500cd2b000149dc3c300 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9909ca37625b50751029b56ecdc71752 = $(`<div id="html_9909ca37625b50751029b56ecdc71752" style="width: 100.0%; height: 100.0%;"><div style="width:100px">무등산</br> 발견날짜:악어거북</div> </div>`)[0];
+                popup_9e7d80eb17dd500cd2b000149dc3c300.setContent(html_9909ca37625b50751029b56ecdc71752);
+            
+        
+
+        marker_7c1013d0603d312f563f68c14810d5c5.bindPopup(popup_9e7d80eb17dd500cd2b000149dc3c300)
+        ;
+
+        
+    
+    
+            marker_7c1013d0603d312f563f68c14810d5c5.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0b2a50750bf14bd749335af41ebc1113 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0b2a50750bf14bd749335af41ebc1113" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0b2a50750bf14bd749335af41ebc1113 = L.map(
+                "map_0b2a50750bf14bd749335af41ebc1113",
+                {
+                    center: [35.878733106497464, 128.645069722639],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2733ba9c3e9f7a6670633bd3a50d98ec = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0b2a50750bf14bd749335af41ebc1113);
+        
+    
+            var circle_marker_4a125e1ac36bfb563a2f637b1e1a05ae = L.circleMarker(
+                [36.328169, 127.389168],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_0b2a50750bf14bd749335af41ebc1113);
+        
+    
+        var popup_03ce77f463acff76301c57e651b3dc64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a23428f4824a74b1f87011648d4124f6 = $(`<div id="html_a23428f4824a74b1f87011648d4124f6" style="width: 100.0%; height: 100.0%;"><div style="width:100px">영산강</br> 발견날짜:미국가재</div> </div>`)[0];
+                popup_03ce77f463acff76301c57e651b3dc64.setContent(html_a23428f4824a74b1f87011648d4124f6);
+            
+        
+
+        circle_marker_4a125e1ac36bfb563a2f637b1e1a05ae.bindPopup(popup_03ce77f463acff76301c57e651b3dc64)
+        ;
+
+        
+    
+    
+            circle_marker_4a125e1ac36bfb563a2f637b1e1a05ae.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_73d2feec05ab4f24dccfac0a2bfdc65a = L.marker(
+                [36.328169, 127.389168],
+                {}
+            ).addTo(map_0b2a50750bf14bd749335af41ebc1113);
+        
+    
+        var popup_0d11cfe995cd8ba2be06d6a790aaf704 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_787806406fa3b167b904d3ddba8e4b8d = $(`<div id="html_787806406fa3b167b904d3ddba8e4b8d" style="width: 100.0%; height: 100.0%;"><div style="width:100px">영산강</br> 발견날짜:미국가재</div> </div>`)[0];
+                popup_0d11cfe995cd8ba2be06d6a790aaf704.setContent(html_787806406fa3b167b904d3ddba8e4b8d);
+            
+        
+
+        marker_73d2feec05ab4f24dccfac0a2bfdc65a.bindPopup(popup_0d11cfe995cd8ba2be06d6a790aaf704)
+        ;
+
+        
+    
+    
+            marker_73d2feec05ab4f24dccfac0a2bfdc65a.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_87ca24e60fb31249d284ea9d32bf61b4 = L.circleMarker(
+                [36.816476, 127.112913],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_0b2a50750bf14bd749335af41ebc1113);
+        
+    
+        var popup_b969131fa339b1e3377ec9e52e9ebd28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_919c4b31a6e3b28b67656c238848e521 = $(`<div id="html_919c4b31a6e3b28b67656c238848e521" style="width: 100.0%; height: 100.0%;"><div style="width:100px">만경강</br> 발견날짜:미국가재</div> </div>`)[0];
+                popup_b969131fa339b1e3377ec9e52e9ebd28.setContent(html_919c4b31a6e3b28b67656c238848e521);
+            
+        
+
+        circle_marker_87ca24e60fb31249d284ea9d32bf61b4.bindPopup(popup_b969131fa339b1e3377ec9e52e9ebd28)
+        ;
+
+        
+    
+    
+            circle_marker_87ca24e60fb31249d284ea9d32bf61b4.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b451f3f9016d555a0b44dfe5017e3e4f = L.marker(
+                [36.816476, 127.112913],
+                {}
+            ).addTo(map_0b2a50750bf14bd749335af41ebc1113);
+        
+    
+        var popup_a9c6500c76b9490627ae1b992859739d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6385f09960f0ed6e74b601af4b68dc3d = $(`<div id="html_6385f09960f0ed6e74b601af4b68dc3d" style="width: 100.0%; height: 100.0%;"><div style="width:100px">만경강</br> 발견날짜:미국가재</div> </div>`)[0];
+                popup_a9c6500c76b9490627ae1b992859739d.setContent(html_6385f09960f0ed6e74b601af4b68dc3d);
+            
+        
+
+        marker_b451f3f9016d555a0b44dfe5017e3e4f.bindPopup(popup_a9c6500c76b9490627ae1b992859739d)
+        ;
+
+        
+    
+    
+            marker_b451f3f9016d555a0b44dfe5017e3e4f.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d3fa3acfaa6b04233d390046c5919202 = L.circleMarker(
+                [34.915219, 128.430912],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_0b2a50750bf14bd749335af41ebc1113);
+        
+    
+        var popup_bded17e11c202d9798c91b1800e2d9ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d825edd8b81675b44c7a73cd10ae690 = $(`<div id="html_5d825edd8b81675b44c7a73cd10ae690" style="width: 100.0%; height: 100.0%;"><div style="width:100px">섬진강</br> 발견날짜:미국가재</div> </div>`)[0];
+                popup_bded17e11c202d9798c91b1800e2d9ec.setContent(html_5d825edd8b81675b44c7a73cd10ae690);
+            
+        
+
+        circle_marker_d3fa3acfaa6b04233d390046c5919202.bindPopup(popup_bded17e11c202d9798c91b1800e2d9ec)
+        ;
+
+        
+    
+    
+            circle_marker_d3fa3acfaa6b04233d390046c5919202.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2a783c20e7ae09360aa4bac508e1b31 = L.marker(
+                [34.915219, 128.430912],
+                {}
+            ).addTo(map_0b2a50750bf14bd749335af41ebc1113);
+        
+    
+        var popup_6f9c68d64355b83919d39e017c5091e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_618a71434b7655bf227c73ccb69e3917 = $(`<div id="html_618a71434b7655bf227c73ccb69e3917" style="width: 100.0%; height: 100.0%;"><div style="width:100px">섬진강</br> 발견날짜:미국가재</div> </div>`)[0];
+                popup_6f9c68d64355b83919d39e017c5091e6.setContent(html_618a71434b7655bf227c73ccb69e3917);
+            
+        
+
+        marker_a2a783c20e7ae09360aa4bac508e1b31.bindPopup(popup_6f9c68d64355b83919d39e017c5091e6)
+        ;
+
+        
+    
+    
+            marker_a2a783c20e7ae09360aa4bac508e1b31.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_10be612a5b1770d2bd81acd9022ee65e = L.circleMarker(
+                [36.119576, 127.311098],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_0b2a50750bf14bd749335af41ebc1113);
+        
+    
+        var popup_c02de738f6fb99d8c916408cf8001b66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c664656dafb86cb149e79a1be109a833 = $(`<div id="html_c664656dafb86cb149e79a1be109a833" style="width: 100.0%; height: 100.0%;"><div style="width:100px">금강유역</br> 발견날짜:미국가재</div> </div>`)[0];
+                popup_c02de738f6fb99d8c916408cf8001b66.setContent(html_c664656dafb86cb149e79a1be109a833);
+            
+        
+
+        circle_marker_10be612a5b1770d2bd81acd9022ee65e.bindPopup(popup_c02de738f6fb99d8c916408cf8001b66)
+        ;
+
+        
+    
+    
+            circle_marker_10be612a5b1770d2bd81acd9022ee65e.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89f8981a2fa7c403fb04433bd6698a07 = L.marker(
+                [36.119576, 127.311098],
+                {}
+            ).addTo(map_0b2a50750bf14bd749335af41ebc1113);
+        
+    
+        var popup_ce1344011e8130c45d96d84e3b2cad61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bd3a13a6094de9b78e426f606e86807 = $(`<div id="html_4bd3a13a6094de9b78e426f606e86807" style="width: 100.0%; height: 100.0%;"><div style="width:100px">금강유역</br> 발견날짜:미국가재</div> </div>`)[0];
+                popup_ce1344011e8130c45d96d84e3b2cad61.setContent(html_4bd3a13a6094de9b78e426f606e86807);
+            
+        
+
+        marker_89f8981a2fa7c403fb04433bd6698a07.bindPopup(popup_ce1344011e8130c45d96d84e3b2cad61)
+        ;
+
+        
+    
+    
+            marker_89f8981a2fa7c403fb04433bd6698a07.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_34d3cf976a2d1f3164360f2c34c693d9 = L.circleMarker(
+                [36.61772, 127.440628],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_0b2a50750bf14bd749335af41ebc1113);
+        
+    
+        var popup_9b0ec8f240f93fe2819a0019b4a1ca89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a384e177b12a14edc48d88e515862d5 = $(`<div id="html_8a384e177b12a14edc48d88e515862d5" style="width: 100.0%; height: 100.0%;"><div style="width:100px">청주시 서원구 산남동 '두꺼비 생태공원</br> 발견날짜:미국가재</div> </div>`)[0];
+                popup_9b0ec8f240f93fe2819a0019b4a1ca89.setContent(html_8a384e177b12a14edc48d88e515862d5);
+            
+        
+
+        circle_marker_34d3cf976a2d1f3164360f2c34c693d9.bindPopup(popup_9b0ec8f240f93fe2819a0019b4a1ca89)
+        ;
+
+        
+    
+    
+            circle_marker_34d3cf976a2d1f3164360f2c34c693d9.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54a9d731f7a6df138d30730a1b1a0399 = L.marker(
+                [36.61772, 127.440628],
+                {}
+            ).addTo(map_0b2a50750bf14bd749335af41ebc1113);
+        
+    
+        var popup_6532034918ddc6a5b7f1b83d28edbd43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5477b7b7658c147e47f7ba8ac6391c8b = $(`<div id="html_5477b7b7658c147e47f7ba8ac6391c8b" style="width: 100.0%; height: 100.0%;"><div style="width:100px">청주시 서원구 산남동 '두꺼비 생태공원</br> 발견날짜:미국가재</div> </div>`)[0];
+                popup_6532034918ddc6a5b7f1b83d28edbd43.setContent(html_5477b7b7658c147e47f7ba8ac6391c8b);
+            
+        
+
+        marker_54a9d731f7a6df138d30730a1b1a0399.bindPopup(popup_6532034918ddc6a5b7f1b83d28edbd43)
+        ;
+
+        
+    
+    
+            marker_54a9d731f7a6df138d30730a1b1a0399.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_62c57509e2cb37577e88fa52dfa4e2fa = L.circleMarker(
+                [36.823689, 127.116663],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_0b2a50750bf14bd749335af41ebc1113);
+        
+    
+        var popup_d903a8690568a520c2722bdd7a8bed8c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df44d15013ed0cf7ec51d4f661c145a6 = $(`<div id="html_df44d15013ed0cf7ec51d4f661c145a6" style="width: 100.0%; height: 100.0%;"><div style="width:100px">만경강</br> 발견날짜:미국가재</div> </div>`)[0];
+                popup_d903a8690568a520c2722bdd7a8bed8c.setContent(html_df44d15013ed0cf7ec51d4f661c145a6);
+            
+        
+
+        circle_marker_62c57509e2cb37577e88fa52dfa4e2fa.bindPopup(popup_d903a8690568a520c2722bdd7a8bed8c)
+        ;
+
+        
+    
+    
+            circle_marker_62c57509e2cb37577e88fa52dfa4e2fa.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6bbbfac4027c4d2ec876e9a33d70826c = L.marker(
+                [36.823689, 127.116663],
+                {}
+            ).addTo(map_0b2a50750bf14bd749335af41ebc1113);
+        
+    
+        var popup_c5c6816429cd2912feecf7bf240db089 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_552cd38dfe2dd1dbe2374deaab68c3f1 = $(`<div id="html_552cd38dfe2dd1dbe2374deaab68c3f1" style="width: 100.0%; height: 100.0%;"><div style="width:100px">만경강</br> 발견날짜:미국가재</div> </div>`)[0];
+                popup_c5c6816429cd2912feecf7bf240db089.setContent(html_552cd38dfe2dd1dbe2374deaab68c3f1);
+            
+        
+
+        marker_6bbbfac4027c4d2ec876e9a33d70826c.bindPopup(popup_c5c6816429cd2912feecf7bf240db089)
+        ;
+
+        
+    
+    
+            marker_6bbbfac4027c4d2ec876e9a33d70826c.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>불법 침입 외래종 지도 서비스 </title>
+    <meta charset="utf-8">
+    <style>
+        .iframe-list__item img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .iframe-list__item {
+            width: 10%;
+        }
+        .iframe-list {
+      list-style: none;
+      cursor: pointer;
+    }
+        .iframe-list {
+            /*좀더 이쁘게 */
+            display: flex;
+            /*조금 더 뛰어서 나열*/
+            flex-wrap: wrap;
+            /*가로로 나열*/
+            justify-content: space-around;
+
+            /*가운데 정렬*/
+            align-items: center;
+            /*위 아래 마진 조금 주기*/
+            margin: 20px 0;
+
+        }
+
+        iframe {
+
+            width: 100%;
+            height: 600px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            /*가운데 정렬*/
+            display: block;
+        }
+
+        /*기본 설정*/
+        body {
+            /*한국어 폰트 font family 설정*/
+
+            
+
+
+          font-family: 'Noto Sans KR', sans-serif;
+            font-size: 14px;
+            background: #fff;
+        }
+
+        #contenedor {
+            width: 1000px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        header {
+            width: 1000px;
+            height: 20%;
+            background: #ffffff;
+            color: #000000;
+            text-align: center;
+        }
+
+        section {
+            width: 1000px;
+            height: 70%;
+            background: #fff;
+            color: #000;
+            text-align: center;
+        }
+
+        footer {
+            width: 1000px;
+            height: 20%;
+            background: #e9dcdc;
+            color: #fff;
+            text-align: center;
+        }
+
+        #mapa {
+            width: 1000px;
+            height: 600px;
+            margin: 0 auto;
+            border: 1px solid #000;
+            /*가운데 정렬*/
+            display: block;
+        }
+         /*리스트 누를 때 마우스 오버 */
+        .a:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(238, 116, 116);
+        }
+        .slider-container {
+            width: 800px;
+            height: 400px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .slide {
+            flex: 0 0 100%;
+            height: 100%;
+        }
+        
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .controls {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20px;
+            right: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .controls button {
+            background: #fff;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 20px;
+            padding: 5px;
+        }
+
+
+        
+    </style>
+
+
+<body>
+
+
+
+
+    <div id="contenedor">
+        <header>
+            <h1>불법 침입 외래종 지도 서비스</h1>
+        </header>
+
+
+        <section>
+            <ul class=" iframe-list">
+                <li class="iframe-list__item">
+                    <img src="images/1.png" alt="Iframe 1">
+                    <p>붉은불개미</p>
+                    <p>Solenopsis invicta</p>
+                    <p>금지병해충</p>
+                </li>
+
+                <li class="iframe-list__item">
+
+                    <img src="images/2.png" alt="Iframe 2">
+                    <p>뉴트리아</p>
+                    <p>Nutria, Coypu</p>
+                    <p>생태계교란 생물</p>
+                </li>
+
+                <li class="iframe-list__item">
+                    <img src="images/3.png" alt="Iframe 3">
+                    <p>가시박</p>
+                    <p>Sicyos angulatus L.</p>
+                    <p>생태계교란 생물</p>
+                </li>
+                <li class="iframe-list__item">
+                    <img src="images/4.png" alt="Iframe 4">
+                    <p>마른나무 흰개미</p>
+                    <p>Kalotermitidae</p>
+                    <p>금지병해충</p>
+                </li>
+
+
+                <li class="iframe-list__item">
+                    <img src="images/5.png" alt="Iframe 5">
+                    <p>붉은귀거북</p>
+                    <p>Trachemys scripta </p>
+                    <p>생태계교란 생물</p>
+                </li>
+                <li class="iframe-list__item">
+                    <img src="images/6.png" alt="Iframe 6">
+                    <p>리버쿠터</p>
+                    <p>Pseudemys concinna</p>
+                    <p>생태계교란 생물</p>
+                </li>
+                <li class="iframe-list__item">
+                    <img src="images/7.png" alt="Iframe 6">
+                    <p>큰입배스</p>
+                    <p>Micropterus salmoides</p>
+                    <p>생태계교란 생물</p>
+                </li>
+            </ul>
+            <div class="slider-container">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="ppt/1.png" alt="Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="ppt/2.png" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="ppt/3.png" alt="Image 3">
+                    </div>
+                    <div class="slide">
+                        <img src="ppt/4.png" alt="Image 3">
+                    </div>
+                    <div class="slide">
+                        <img src="ppt/5.png" alt="Image 3">
+                    </div>
+                    <div class="slide">
+                        <img src="ppt/6.png" alt="Image 3">
+                    </div>
+                    <div class="slide">
+                        <img src="ppt/7.png" alt="Image 3">
+                    </div>
+                    <div class="slide">
+                        <img src="ppt/8.png" alt="Image 3">
+                    </div>
+                </div>
+                <div class="controls">
+                    <button onclick="prevSlide()">&#10094;</button>
+                    <button onclick="nextSlide()">&#10095;</button>
+                </div>
+            </div>
+        
+            <script>
+                var slideIndex = 0;
+                var slides = document.querySelectorAll('.slide');
+        
+                showSlide(slideIndex);
+        
+                function prevSlide() {
+                    slideIndex--;
+                    if (slideIndex < 0) {
+                        slideIndex = slides.length - 1;
+                    }
+                    showSlide(slideIndex);
+                }
+        
+                function nextSlide() {
+                    slideIndex++;
+                    if (slideIndex >= slides.length) {
+                        slideIndex = 0;
+                    }
+                    showSlide(slideIndex);
+                }
+        
+                function showSlide(index) {
+                    for (var i = 0; i < slides.length; i++) {
+                        if (i === index) {
+                            slides[i].style.display = 'block';
+                        } else {
+                            slides[i].style.display = 'none';
+                        }
+                    }
+                }
+            </script>
+            
+            <ul class="iframe-list">
+                <li class="a" onclick="selectIframe(0)">붉은불개미</li>
+                <li class="a" onclick="selectIframe(1)">뉴트리아</li>
+                <li class="a" onclick="selectIframe(2)">가시박</li>
+                <li class="a" onclick="selectIframe(3)">흰개미</li>
+                <li class="a" onclick="selectIframe(4)">붉은귀거북</li>
+                <li class="a" onclick="selectIframe(5)">리버쿠터</li>
+                <li class="a" onclick="selectIframe(6)">배스</li>
+              </ul>
+              
+              <script>
+                var iframes = document.getElementsByTagName('iframe');
+                selectIframe(0); // Default: Show Iframe 1
+              
+                function selectIframe(index) {
+                  for (var i = 0; i < iframes.length; i++) {
+                    if (i === index) {
+                      iframes[i].style.display = 'block';
+                    } else {
+                      iframes[i].style.display = 'none';
+                    }
+                  }
+                }
+              </script>
+              
+              <iframe src="as.html" id="iframe-1"></iframe>
+              <iframe src="nutria.html" id="iframe-2"></iframe>
+              <iframe src="gasibak.html" id="iframe-3"></iframe>
+              <iframe src="antwhite.html" id="iframe-4"></iframe>
+              <iframe src="bul.html" id="iframe-5"></iframe>
+              <iframe src="river.html" id="iframe-6"></iframe>
+              <iframe src="bass.html" id="iframe-7"></iframe>
+              
+              <script>
+                for (var i = 1; i < iframes.length; i++) {
+                  iframes[i].style.display = 'none';
+                }
+              </script>
+              
+        </section>
+
+
+        <footer>
+            <p>Developed by <a href="http://www.alejandro-leyva.com" target="_blank">Hyunse KIm</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

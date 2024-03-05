@@ -1,0 +1,1867 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9f52e457145622057f24ab43415fc03a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_9f52e457145622057f24ab43415fc03a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_9f52e457145622057f24ab43415fc03a = L.map(
+                "map_9f52e457145622057f24ab43415fc03a",
+                {
+                    center: [35.878733106497464, 128.645069722639],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_75c77f5be23bd39583c8136d14605690 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+            var circle_marker_44471eff13f525f3020b93b6ed116871 = L.circleMarker(
+                [37.6208, 127.2093],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_8b068ebfe8116676700cf61d608544e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7597d9bb20f21fe142f7649221f01563 = $(`<div id="html_7597d9bb20f21fe142f7649221f01563" style="width: 100.0%; height: 100.0%;"><div style="width:100px">남한강 호수공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_8b068ebfe8116676700cf61d608544e8.setContent(html_7597d9bb20f21fe142f7649221f01563);
+            
+        
+
+        circle_marker_44471eff13f525f3020b93b6ed116871.bindPopup(popup_8b068ebfe8116676700cf61d608544e8)
+        ;
+
+        
+    
+    
+            circle_marker_44471eff13f525f3020b93b6ed116871.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_859fe6231dafbf56906cd089406e4d49 = L.marker(
+                [37.6208, 127.2093],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_f82026a66a0e2528be9f6566c4f12646 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_361499527064ca3ba728b3ac2eae9621 = $(`<div id="html_361499527064ca3ba728b3ac2eae9621" style="width: 100.0%; height: 100.0%;"><div style="width:100px">남한강 호수공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_f82026a66a0e2528be9f6566c4f12646.setContent(html_361499527064ca3ba728b3ac2eae9621);
+            
+        
+
+        marker_859fe6231dafbf56906cd089406e4d49.bindPopup(popup_f82026a66a0e2528be9f6566c4f12646)
+        ;
+
+        
+    
+    
+            marker_859fe6231dafbf56906cd089406e4d49.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d06bf758a099c4093fb31961f1f45a1e = L.circleMarker(
+                [37.9864, 126.9417],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_9d1c6e509b0b2468d73a29b549fd5ffa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2ca9509432fe65530e0d37f2ec5dc92 = $(`<div id="html_c2ca9509432fe65530e0d37f2ec5dc92" style="width: 100.0%; height: 100.0%;"><div style="width:100px">북한강 호수공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_9d1c6e509b0b2468d73a29b549fd5ffa.setContent(html_c2ca9509432fe65530e0d37f2ec5dc92);
+            
+        
+
+        circle_marker_d06bf758a099c4093fb31961f1f45a1e.bindPopup(popup_9d1c6e509b0b2468d73a29b549fd5ffa)
+        ;
+
+        
+    
+    
+            circle_marker_d06bf758a099c4093fb31961f1f45a1e.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ee8d601331f15cb4f964c1bbc322e4a = L.marker(
+                [37.9864, 126.9417],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_b652b86b1930ba91c10dd59e6ff6b239 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60a793a85d0b34416c743d24973b6e4e = $(`<div id="html_60a793a85d0b34416c743d24973b6e4e" style="width: 100.0%; height: 100.0%;"><div style="width:100px">북한강 호수공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_b652b86b1930ba91c10dd59e6ff6b239.setContent(html_60a793a85d0b34416c743d24973b6e4e);
+            
+        
+
+        marker_9ee8d601331f15cb4f964c1bbc322e4a.bindPopup(popup_b652b86b1930ba91c10dd59e6ff6b239)
+        ;
+
+        
+    
+    
+            marker_9ee8d601331f15cb4f964c1bbc322e4a.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b7f968492bf8ee97712c07dabbac9c23 = L.circleMarker(
+                [36.9858, 127.8402],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_8a388a08b0b8222ce98c8a7d5f76b875 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a4ba725a9c06a0142e69458fe9d77cf = $(`<div id="html_7a4ba725a9c06a0142e69458fe9d77cf" style="width: 100.0%; height: 100.0%;"><div style="width:100px">충주호</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_8a388a08b0b8222ce98c8a7d5f76b875.setContent(html_7a4ba725a9c06a0142e69458fe9d77cf);
+            
+        
+
+        circle_marker_b7f968492bf8ee97712c07dabbac9c23.bindPopup(popup_8a388a08b0b8222ce98c8a7d5f76b875)
+        ;
+
+        
+    
+    
+            circle_marker_b7f968492bf8ee97712c07dabbac9c23.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f307408ebd1f5c6a42a190ee5a7de34 = L.marker(
+                [36.9858, 127.8402],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_51f743d0f39f47795460168659d16794 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_248711e3526073f401a5c61b132f7803 = $(`<div id="html_248711e3526073f401a5c61b132f7803" style="width: 100.0%; height: 100.0%;"><div style="width:100px">충주호</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_51f743d0f39f47795460168659d16794.setContent(html_248711e3526073f401a5c61b132f7803);
+            
+        
+
+        marker_0f307408ebd1f5c6a42a190ee5a7de34.bindPopup(popup_51f743d0f39f47795460168659d16794)
+        ;
+
+        
+    
+    
+            marker_0f307408ebd1f5c6a42a190ee5a7de34.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1685cdaa94553f0bc268f1676b3019f1 = L.circleMarker(
+                [36.7929, 126.3304],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_c4ea2600761396fe388b4d8f2d5bcf4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_006a6378b868ef9cda1d2141b71661a5 = $(`<div id="html_006a6378b868ef9cda1d2141b71661a5" style="width: 100.0%; height: 100.0%;"><div style="width:100px">서호</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_c4ea2600761396fe388b4d8f2d5bcf4c.setContent(html_006a6378b868ef9cda1d2141b71661a5);
+            
+        
+
+        circle_marker_1685cdaa94553f0bc268f1676b3019f1.bindPopup(popup_c4ea2600761396fe388b4d8f2d5bcf4c)
+        ;
+
+        
+    
+    
+            circle_marker_1685cdaa94553f0bc268f1676b3019f1.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff187f4edbc8220073b31ba38336c5a5 = L.marker(
+                [36.7929, 126.3304],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_45119d9092d7ec839556c462adf3057d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d3743f13ea1ccabff77bb6975417cea = $(`<div id="html_4d3743f13ea1ccabff77bb6975417cea" style="width: 100.0%; height: 100.0%;"><div style="width:100px">서호</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_45119d9092d7ec839556c462adf3057d.setContent(html_4d3743f13ea1ccabff77bb6975417cea);
+            
+        
+
+        marker_ff187f4edbc8220073b31ba38336c5a5.bindPopup(popup_45119d9092d7ec839556c462adf3057d)
+        ;
+
+        
+    
+    
+            marker_ff187f4edbc8220073b31ba38336c5a5.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ff64329b67fa9bc8bf4d5ee5147d6af0 = L.circleMarker(
+                [36.2069, 127.1992],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_fd791d5a6ad2ff6f715cc69464551c6a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a17ca40e89d458740346130620d794ab = $(`<div id="html_a17ca40e89d458740346130620d794ab" style="width: 100.0%; height: 100.0%;"><div style="width:100px">대청호</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_fd791d5a6ad2ff6f715cc69464551c6a.setContent(html_a17ca40e89d458740346130620d794ab);
+            
+        
+
+        circle_marker_ff64329b67fa9bc8bf4d5ee5147d6af0.bindPopup(popup_fd791d5a6ad2ff6f715cc69464551c6a)
+        ;
+
+        
+    
+    
+            circle_marker_ff64329b67fa9bc8bf4d5ee5147d6af0.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3c748fdd769c1831be9cb2b5cd443f8e = L.marker(
+                [36.2069, 127.1992],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_d00094489bd50e58f9d7c2851624f4e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ebf89498c74d2e5f6be5776e8ae8b47 = $(`<div id="html_5ebf89498c74d2e5f6be5776e8ae8b47" style="width: 100.0%; height: 100.0%;"><div style="width:100px">대청호</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_d00094489bd50e58f9d7c2851624f4e8.setContent(html_5ebf89498c74d2e5f6be5776e8ae8b47);
+            
+        
+
+        marker_3c748fdd769c1831be9cb2b5cd443f8e.bindPopup(popup_d00094489bd50e58f9d7c2851624f4e8)
+        ;
+
+        
+    
+    
+            marker_3c748fdd769c1831be9cb2b5cd443f8e.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d977934b75a526a8aaef2a044dc66720 = L.circleMarker(
+                [35.1013, 128.9367],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_dc2f4eb10359dad4ddbec43ecfccb15e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b0740f22da83cf67c94ded4bf4aad64 = $(`<div id="html_5b0740f22da83cf67c94ded4bf4aad64" style="width: 100.0%; height: 100.0%;"><div style="width:100px">부산 사하생태공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_dc2f4eb10359dad4ddbec43ecfccb15e.setContent(html_5b0740f22da83cf67c94ded4bf4aad64);
+            
+        
+
+        circle_marker_d977934b75a526a8aaef2a044dc66720.bindPopup(popup_dc2f4eb10359dad4ddbec43ecfccb15e)
+        ;
+
+        
+    
+    
+            circle_marker_d977934b75a526a8aaef2a044dc66720.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f55a9bfb76951f98bc769a18239099e0 = L.marker(
+                [35.1013, 128.9367],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_c87d80a406c66e6dc2aa31ba067fa716 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e5315cab36e0033174eb8257ddffc1e = $(`<div id="html_5e5315cab36e0033174eb8257ddffc1e" style="width: 100.0%; height: 100.0%;"><div style="width:100px">부산 사하생태공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_c87d80a406c66e6dc2aa31ba067fa716.setContent(html_5e5315cab36e0033174eb8257ddffc1e);
+            
+        
+
+        marker_f55a9bfb76951f98bc769a18239099e0.bindPopup(popup_c87d80a406c66e6dc2aa31ba067fa716)
+        ;
+
+        
+    
+    
+            marker_f55a9bfb76951f98bc769a18239099e0.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_304560d86e51a319cff5df88c7e2a8fc = L.circleMarker(
+                [37.5359, 126.8948],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_b5ba515b25bb213cc80aed9e873aa036 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06183ce4688446bd51d19fff9596a3a5 = $(`<div id="html_06183ce4688446bd51d19fff9596a3a5" style="width: 100.0%; height: 100.0%;"><div style="width:100px">서울 선유도 공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_b5ba515b25bb213cc80aed9e873aa036.setContent(html_06183ce4688446bd51d19fff9596a3a5);
+            
+        
+
+        circle_marker_304560d86e51a319cff5df88c7e2a8fc.bindPopup(popup_b5ba515b25bb213cc80aed9e873aa036)
+        ;
+
+        
+    
+    
+            circle_marker_304560d86e51a319cff5df88c7e2a8fc.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a5cee00ae89b5369a4c730710035ece = L.marker(
+                [37.5359, 126.8948],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_62d1405359f06e5fb5bcfb58920bbe54 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_406642cbadc95d9c2afc84778594312a = $(`<div id="html_406642cbadc95d9c2afc84778594312a" style="width: 100.0%; height: 100.0%;"><div style="width:100px">서울 선유도 공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_62d1405359f06e5fb5bcfb58920bbe54.setContent(html_406642cbadc95d9c2afc84778594312a);
+            
+        
+
+        marker_5a5cee00ae89b5369a4c730710035ece.bindPopup(popup_62d1405359f06e5fb5bcfb58920bbe54)
+        ;
+
+        
+    
+    
+            marker_5a5cee00ae89b5369a4c730710035ece.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6f9efd3787d6a6c626c3964df8ebbe5c = L.circleMarker(
+                [37.4728, 126.6053],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_0b56c6d7685c0b80b3f0899e28fe6e52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6399393c1c03c5b15746099ec20dab33 = $(`<div id="html_6399393c1c03c5b15746099ec20dab33" style="width: 100.0%; height: 100.0%;"><div style="width:100px">인천 자유공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_0b56c6d7685c0b80b3f0899e28fe6e52.setContent(html_6399393c1c03c5b15746099ec20dab33);
+            
+        
+
+        circle_marker_6f9efd3787d6a6c626c3964df8ebbe5c.bindPopup(popup_0b56c6d7685c0b80b3f0899e28fe6e52)
+        ;
+
+        
+    
+    
+            circle_marker_6f9efd3787d6a6c626c3964df8ebbe5c.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a456a789e793a6141310ef228a3ebb2f = L.marker(
+                [37.4728, 126.6053],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_fe1aab52b83c302c31140530479b7301 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f58e2f33bcb343b826688c852e818d9c = $(`<div id="html_f58e2f33bcb343b826688c852e818d9c" style="width: 100.0%; height: 100.0%;"><div style="width:100px">인천 자유공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_fe1aab52b83c302c31140530479b7301.setContent(html_f58e2f33bcb343b826688c852e818d9c);
+            
+        
+
+        marker_a456a789e793a6141310ef228a3ebb2f.bindPopup(popup_fe1aab52b83c302c31140530479b7301)
+        ;
+
+        
+    
+    
+            marker_a456a789e793a6141310ef228a3ebb2f.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bedf7c87e08b99c03e81c70ab29b49be = L.circleMarker(
+                [35.8472, 128.6072],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_bcf6eb7976429ed7cc1006d3e40ba398 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24614de560691d8f3b877e08812afe5e = $(`<div id="html_24614de560691d8f3b877e08812afe5e" style="width: 100.0%; height: 100.0%;"><div style="width:100px">대구 수성못</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_bcf6eb7976429ed7cc1006d3e40ba398.setContent(html_24614de560691d8f3b877e08812afe5e);
+            
+        
+
+        circle_marker_bedf7c87e08b99c03e81c70ab29b49be.bindPopup(popup_bcf6eb7976429ed7cc1006d3e40ba398)
+        ;
+
+        
+    
+    
+            circle_marker_bedf7c87e08b99c03e81c70ab29b49be.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74cd7439943ca853d609ed96d1938e39 = L.marker(
+                [35.8472, 128.6072],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_e40c64c64bdc0a6004feb992f944088d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66baf41ce64d0297ab4dc86627bdb41b = $(`<div id="html_66baf41ce64d0297ab4dc86627bdb41b" style="width: 100.0%; height: 100.0%;"><div style="width:100px">대구 수성못</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_e40c64c64bdc0a6004feb992f944088d.setContent(html_66baf41ce64d0297ab4dc86627bdb41b);
+            
+        
+
+        marker_74cd7439943ca853d609ed96d1938e39.bindPopup(popup_e40c64c64bdc0a6004feb992f944088d)
+        ;
+
+        
+    
+    
+            marker_74cd7439943ca853d609ed96d1938e39.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_093f533a7b9f654d845c3f22f03c114b = L.circleMarker(
+                [35.1046, 126.9137],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_49816bded5d7b71197b07f09fcfd8c9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07b783c4ef1c0a3e3762c104540a0cdc = $(`<div id="html_07b783c4ef1c0a3e3762c104540a0cdc" style="width: 100.0%; height: 100.0%;"><div style="width:100px">광주 광천수변공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_49816bded5d7b71197b07f09fcfd8c9b.setContent(html_07b783c4ef1c0a3e3762c104540a0cdc);
+            
+        
+
+        circle_marker_093f533a7b9f654d845c3f22f03c114b.bindPopup(popup_49816bded5d7b71197b07f09fcfd8c9b)
+        ;
+
+        
+    
+    
+            circle_marker_093f533a7b9f654d845c3f22f03c114b.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8a81e2c9df241e9ca9aab329dc93448 = L.marker(
+                [35.1046, 126.9137],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_972de09791a3a9a6169c2f898950c4ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b442aad008e0b9fb6c5ce3f44d33b3aa = $(`<div id="html_b442aad008e0b9fb6c5ce3f44d33b3aa" style="width: 100.0%; height: 100.0%;"><div style="width:100px">광주 광천수변공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_972de09791a3a9a6169c2f898950c4ec.setContent(html_b442aad008e0b9fb6c5ce3f44d33b3aa);
+            
+        
+
+        marker_f8a81e2c9df241e9ca9aab329dc93448.bindPopup(popup_972de09791a3a9a6169c2f898950c4ec)
+        ;
+
+        
+    
+    
+            marker_f8a81e2c9df241e9ca9aab329dc93448.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_71b4ccb6683317c14137ab327e58d783 = L.circleMarker(
+                [36.3813, 127.3167],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_74e7885aac6d3a9b52d6dcabdb10f3f2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0d7dccfa70f1403573d070e1a6b0520 = $(`<div id="html_a0d7dccfa70f1403573d070e1a6b0520" style="width: 100.0%; height: 100.0%;"><div style="width:100px">대전 유성호수공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_74e7885aac6d3a9b52d6dcabdb10f3f2.setContent(html_a0d7dccfa70f1403573d070e1a6b0520);
+            
+        
+
+        circle_marker_71b4ccb6683317c14137ab327e58d783.bindPopup(popup_74e7885aac6d3a9b52d6dcabdb10f3f2)
+        ;
+
+        
+    
+    
+            circle_marker_71b4ccb6683317c14137ab327e58d783.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e299f1f75c351798b9761a473140be8 = L.marker(
+                [36.3813, 127.3167],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_fad7194a7833ed892544a706d0cc7968 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54e150d819a8d8bb02e293ca5dadd66c = $(`<div id="html_54e150d819a8d8bb02e293ca5dadd66c" style="width: 100.0%; height: 100.0%;"><div style="width:100px">대전 유성호수공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_fad7194a7833ed892544a706d0cc7968.setContent(html_54e150d819a8d8bb02e293ca5dadd66c);
+            
+        
+
+        marker_0e299f1f75c351798b9761a473140be8.bindPopup(popup_fad7194a7833ed892544a706d0cc7968)
+        ;
+
+        
+    
+    
+            marker_0e299f1f75c351798b9761a473140be8.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_49f43ef2d720497633c879a13d4f60aa = L.circleMarker(
+                [35.51, 129.4409],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_980b16d140d73d2a099c7cdaf67efb8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bd5e670615e8485be6f1aaa3f89fd87 = $(`<div id="html_3bd5e670615e8485be6f1aaa3f89fd87" style="width: 100.0%; height: 100.0%;"><div style="width:100px">울산 태화강 국가정원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_980b16d140d73d2a099c7cdaf67efb8f.setContent(html_3bd5e670615e8485be6f1aaa3f89fd87);
+            
+        
+
+        circle_marker_49f43ef2d720497633c879a13d4f60aa.bindPopup(popup_980b16d140d73d2a099c7cdaf67efb8f)
+        ;
+
+        
+    
+    
+            circle_marker_49f43ef2d720497633c879a13d4f60aa.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_053b741b642fe1b527e987d0429bbba3 = L.marker(
+                [35.51, 129.4409],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_997b594051045c2ba969c39963b9381b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a12b15e5808886a2a89fb2deecece113 = $(`<div id="html_a12b15e5808886a2a89fb2deecece113" style="width: 100.0%; height: 100.0%;"><div style="width:100px">울산 태화강 국가정원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_997b594051045c2ba969c39963b9381b.setContent(html_a12b15e5808886a2a89fb2deecece113);
+            
+        
+
+        marker_053b741b642fe1b527e987d0429bbba3.bindPopup(popup_997b594051045c2ba969c39963b9381b)
+        ;
+
+        
+    
+    
+            marker_053b741b642fe1b527e987d0429bbba3.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b5ecf0b338d8d0b6e599110f3eafd9b3 = L.circleMarker(
+                [35.8574, 129.2248],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_ff8aa7217c4519a5b4d7fd4687f73f2e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_112943d9afd1cac55f67f7a832623b8b = $(`<div id="html_112943d9afd1cac55f67f7a832623b8b" style="width: 100.0%; height: 100.0%;"><div style="width:100px">경주 안압지</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_ff8aa7217c4519a5b4d7fd4687f73f2e.setContent(html_112943d9afd1cac55f67f7a832623b8b);
+            
+        
+
+        circle_marker_b5ecf0b338d8d0b6e599110f3eafd9b3.bindPopup(popup_ff8aa7217c4519a5b4d7fd4687f73f2e)
+        ;
+
+        
+    
+    
+            circle_marker_b5ecf0b338d8d0b6e599110f3eafd9b3.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67f556ae33f43a4be096ac1dd8d4518d = L.marker(
+                [35.8574, 129.2248],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_d598e85a52d42b7cd56fb909d17c69ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f943b08813c8f9885a33082f0ea6117e = $(`<div id="html_f943b08813c8f9885a33082f0ea6117e" style="width: 100.0%; height: 100.0%;"><div style="width:100px">경주 안압지</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_d598e85a52d42b7cd56fb909d17c69ab.setContent(html_f943b08813c8f9885a33082f0ea6117e);
+            
+        
+
+        marker_67f556ae33f43a4be096ac1dd8d4518d.bindPopup(popup_d598e85a52d42b7cd56fb909d17c69ab)
+        ;
+
+        
+    
+    
+            marker_67f556ae33f43a4be096ac1dd8d4518d.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_830eae511d9c59eda0c852f778ccd9d1 = L.circleMarker(
+                [37.7482, 128.8699],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_c61531520b16f3f3856dd83ec0f37bac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ca549f66a5d13dacb5700e3933d3a45 = $(`<div id="html_8ca549f66a5d13dacb5700e3933d3a45" style="width: 100.0%; height: 100.0%;"><div style="width:100px">강릉 경포호</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_c61531520b16f3f3856dd83ec0f37bac.setContent(html_8ca549f66a5d13dacb5700e3933d3a45);
+            
+        
+
+        circle_marker_830eae511d9c59eda0c852f778ccd9d1.bindPopup(popup_c61531520b16f3f3856dd83ec0f37bac)
+        ;
+
+        
+    
+    
+            circle_marker_830eae511d9c59eda0c852f778ccd9d1.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7a649732c0f480b364d21745fa085610 = L.marker(
+                [37.7482, 128.8699],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_730c03d3caace0910a0d4f390d3edcf7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b547925e7a8e601404d26a8ab829815a = $(`<div id="html_b547925e7a8e601404d26a8ab829815a" style="width: 100.0%; height: 100.0%;"><div style="width:100px">강릉 경포호</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_730c03d3caace0910a0d4f390d3edcf7.setContent(html_b547925e7a8e601404d26a8ab829815a);
+            
+        
+
+        marker_7a649732c0f480b364d21745fa085610.bindPopup(popup_730c03d3caace0910a0d4f390d3edcf7)
+        ;
+
+        
+    
+    
+            marker_7a649732c0f480b364d21745fa085610.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_760fe4468470237f6132c9b178f9b2b8 = L.circleMarker(
+                [37.0376, 128.2673],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_a8ba1885dbfb784bc11e369b801a2657 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bc30a3eb9bb6b47abf4f863fc44a8fa = $(`<div id="html_2bc30a3eb9bb6b47abf4f863fc44a8fa" style="width: 100.0%; height: 100.0%;"><div style="width:100px">제천 청풍호</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_a8ba1885dbfb784bc11e369b801a2657.setContent(html_2bc30a3eb9bb6b47abf4f863fc44a8fa);
+            
+        
+
+        circle_marker_760fe4468470237f6132c9b178f9b2b8.bindPopup(popup_a8ba1885dbfb784bc11e369b801a2657)
+        ;
+
+        
+    
+    
+            circle_marker_760fe4468470237f6132c9b178f9b2b8.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af258a21522ed16386b5df81b65d2d68 = L.marker(
+                [37.0376, 128.2673],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_f1227000069a196472865fcffd5d33ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be3e1f9d84eb2fdcd31ba7f373bf7a4d = $(`<div id="html_be3e1f9d84eb2fdcd31ba7f373bf7a4d" style="width: 100.0%; height: 100.0%;"><div style="width:100px">제천 청풍호</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_f1227000069a196472865fcffd5d33ad.setContent(html_be3e1f9d84eb2fdcd31ba7f373bf7a4d);
+            
+        
+
+        marker_af258a21522ed16386b5df81b65d2d68.bindPopup(popup_f1227000069a196472865fcffd5d33ad)
+        ;
+
+        
+    
+    
+            marker_af258a21522ed16386b5df81b65d2d68.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cae0d9362fd23dc9a3d6d768391488ee = L.circleMarker(
+                [38.0654, 128.3162],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_93b7e9cecf1b0dcefb997fbd909058c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dbad08d0b885a192e0e65ddc5f2c40f2 = $(`<div id="html_dbad08d0b885a192e0e65ddc5f2c40f2" style="width: 100.0%; height: 100.0%;"><div style="width:100px">인제 화제호</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_93b7e9cecf1b0dcefb997fbd909058c0.setContent(html_dbad08d0b885a192e0e65ddc5f2c40f2);
+            
+        
+
+        circle_marker_cae0d9362fd23dc9a3d6d768391488ee.bindPopup(popup_93b7e9cecf1b0dcefb997fbd909058c0)
+        ;
+
+        
+    
+    
+            circle_marker_cae0d9362fd23dc9a3d6d768391488ee.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5dc0585956c7d04f64f61f72fa93a46 = L.marker(
+                [38.0654, 128.3162],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_777cc513ab8779d380b3e933f2b38f85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fdfd94fa29b5671176b96f4627d779e = $(`<div id="html_7fdfd94fa29b5671176b96f4627d779e" style="width: 100.0%; height: 100.0%;"><div style="width:100px">인제 화제호</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_777cc513ab8779d380b3e933f2b38f85.setContent(html_7fdfd94fa29b5671176b96f4627d779e);
+            
+        
+
+        marker_d5dc0585956c7d04f64f61f72fa93a46.bindPopup(popup_777cc513ab8779d380b3e933f2b38f85)
+        ;
+
+        
+    
+    
+            marker_d5dc0585956c7d04f64f61f72fa93a46.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_559a5f537c2aabc8858dae36d3c76f9f = L.circleMarker(
+                [35.3064, 129.0174],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_1fa8f243435707a4312ee3ecd7a16b34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a814361101ab448af621045a3c22cf7d = $(`<div id="html_a814361101ab448af621045a3c22cf7d" style="width: 100.0%; height: 100.0%;"><div style="width:100px">양산 남매지리 공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_1fa8f243435707a4312ee3ecd7a16b34.setContent(html_a814361101ab448af621045a3c22cf7d);
+            
+        
+
+        circle_marker_559a5f537c2aabc8858dae36d3c76f9f.bindPopup(popup_1fa8f243435707a4312ee3ecd7a16b34)
+        ;
+
+        
+    
+    
+            circle_marker_559a5f537c2aabc8858dae36d3c76f9f.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b52bc35ff34e5dac478ffe4e84b895bb = L.marker(
+                [35.3064, 129.0174],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_e55051b65a70db3f4fc69d313c25a776 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee2104e92b64ef090ffe8efb768c8e98 = $(`<div id="html_ee2104e92b64ef090ffe8efb768c8e98" style="width: 100.0%; height: 100.0%;"><div style="width:100px">양산 남매지리 공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_e55051b65a70db3f4fc69d313c25a776.setContent(html_ee2104e92b64ef090ffe8efb768c8e98);
+            
+        
+
+        marker_b52bc35ff34e5dac478ffe4e84b895bb.bindPopup(popup_e55051b65a70db3f4fc69d313c25a776)
+        ;
+
+        
+    
+    
+            marker_b52bc35ff34e5dac478ffe4e84b895bb.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ef29788c85fc5a260953c5f16e8453d3 = L.circleMarker(
+                [36.0442, 129.3809],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_5381276f4a225fdf83d6c5900013c2fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b0aab1f9c72ac01547b1a28e91655b0 = $(`<div id="html_7b0aab1f9c72ac01547b1a28e91655b0" style="width: 100.0%; height: 100.0%;"><div style="width:100px">포항 해맞이공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_5381276f4a225fdf83d6c5900013c2fc.setContent(html_7b0aab1f9c72ac01547b1a28e91655b0);
+            
+        
+
+        circle_marker_ef29788c85fc5a260953c5f16e8453d3.bindPopup(popup_5381276f4a225fdf83d6c5900013c2fc)
+        ;
+
+        
+    
+    
+            circle_marker_ef29788c85fc5a260953c5f16e8453d3.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d405411d2bd81856567d23fa282cf8dd = L.marker(
+                [36.0442, 129.3809],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_8c42b5242c4fecc6198514d63639e073 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f142612b546ba4b71c9fc4773b2429a = $(`<div id="html_4f142612b546ba4b71c9fc4773b2429a" style="width: 100.0%; height: 100.0%;"><div style="width:100px">포항 해맞이공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_8c42b5242c4fecc6198514d63639e073.setContent(html_4f142612b546ba4b71c9fc4773b2429a);
+            
+        
+
+        marker_d405411d2bd81856567d23fa282cf8dd.bindPopup(popup_8c42b5242c4fecc6198514d63639e073)
+        ;
+
+        
+    
+    
+            marker_d405411d2bd81856567d23fa282cf8dd.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_bf006718c788b16115440c6c23aec642 = L.circleMarker(
+                [35.1887, 128.6823],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_762a731ec2cc008812b36fd112b2fddc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a87ca29739f7237d9f3d646c4d848ce = $(`<div id="html_3a87ca29739f7237d9f3d646c4d848ce" style="width: 100.0%; height: 100.0%;"><div style="width:100px">창원 용지산 도시자연공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_762a731ec2cc008812b36fd112b2fddc.setContent(html_3a87ca29739f7237d9f3d646c4d848ce);
+            
+        
+
+        circle_marker_bf006718c788b16115440c6c23aec642.bindPopup(popup_762a731ec2cc008812b36fd112b2fddc)
+        ;
+
+        
+    
+    
+            circle_marker_bf006718c788b16115440c6c23aec642.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_173b9f045a2fc8eb87bee09b1de605f1 = L.marker(
+                [35.1887, 128.6823],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_d8096572bf30a5af15b0ff3709d103c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25cb09c4ccc56ef4b4eafe70ffdfe475 = $(`<div id="html_25cb09c4ccc56ef4b4eafe70ffdfe475" style="width: 100.0%; height: 100.0%;"><div style="width:100px">창원 용지산 도시자연공원</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_d8096572bf30a5af15b0ff3709d103c9.setContent(html_25cb09c4ccc56ef4b4eafe70ffdfe475);
+            
+        
+
+        marker_173b9f045a2fc8eb87bee09b1de605f1.bindPopup(popup_d8096572bf30a5af15b0ff3709d103c9)
+        ;
+
+        
+    
+    
+            marker_173b9f045a2fc8eb87bee09b1de605f1.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_edb32ecadf81d1e60fea7dccd59a11f9 = L.circleMarker(
+                [36.5739, 128.7349],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_cb8ac91485f72804c752f07a650145b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2e740f9c453fd4e706cde6eabd72076 = $(`<div id="html_f2e740f9c453fd4e706cde6eabd72076" style="width: 100.0%; height: 100.0%;"><div style="width:100px">안동 하회마을</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_cb8ac91485f72804c752f07a650145b3.setContent(html_f2e740f9c453fd4e706cde6eabd72076);
+            
+        
+
+        circle_marker_edb32ecadf81d1e60fea7dccd59a11f9.bindPopup(popup_cb8ac91485f72804c752f07a650145b3)
+        ;
+
+        
+    
+    
+            circle_marker_edb32ecadf81d1e60fea7dccd59a11f9.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b90d908ede9972b7a1c911ff21247e15 = L.marker(
+                [36.5739, 128.7349],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_41e440e38ed388e8179bd9336338d551 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8c2ee24b81308fe5e2f87cf1b0cef5c2 = $(`<div id="html_8c2ee24b81308fe5e2f87cf1b0cef5c2" style="width: 100.0%; height: 100.0%;"><div style="width:100px">안동 하회마을</br> 발견날짜:리버쿠터</div> </div>`)[0];
+                popup_41e440e38ed388e8179bd9336338d551.setContent(html_8c2ee24b81308fe5e2f87cf1b0cef5c2);
+            
+        
+
+        marker_b90d908ede9972b7a1c911ff21247e15.bindPopup(popup_41e440e38ed388e8179bd9336338d551)
+        ;
+
+        
+    
+    
+            marker_b90d908ede9972b7a1c911ff21247e15.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d07f991d9ddbcccd680b8a3c416411fd = L.circleMarker(
+                [37.547895, 127.074662],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_9409653b13fed0367eba6862ae6f7309 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64888b4546f1845243032f5fec524823 = $(`<div id="html_64888b4546f1845243032f5fec524823" style="width: 100.0%; height: 100.0%;"><div style="width:100px">서울특별시 광진구 능동</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_9409653b13fed0367eba6862ae6f7309.setContent(html_64888b4546f1845243032f5fec524823);
+            
+        
+
+        circle_marker_d07f991d9ddbcccd680b8a3c416411fd.bindPopup(popup_9409653b13fed0367eba6862ae6f7309)
+        ;
+
+        
+    
+    
+            circle_marker_d07f991d9ddbcccd680b8a3c416411fd.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2689fc7dfcffaa7575728d5a3d479d9 = L.marker(
+                [37.547895, 127.074662],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_de8a054161d7bfdb807c33173f80a91f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77a273f285558268b8ff03d731227054 = $(`<div id="html_77a273f285558268b8ff03d731227054" style="width: 100.0%; height: 100.0%;"><div style="width:100px">서울특별시 광진구 능동</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_de8a054161d7bfdb807c33173f80a91f.setContent(html_77a273f285558268b8ff03d731227054);
+            
+        
+
+        marker_e2689fc7dfcffaa7575728d5a3d479d9.bindPopup(popup_de8a054161d7bfdb807c33173f80a91f)
+        ;
+
+        
+    
+    
+            marker_e2689fc7dfcffaa7575728d5a3d479d9.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5c427cf7f17ea8cdb3f133cb49c345e3 = L.circleMarker(
+                [33.489011, 126.498302],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_717b99f0f6f2cba5b8b4cccd44d42b38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b8c21918a0dd186d8e1437444f2ad38 = $(`<div id="html_1b8c21918a0dd186d8e1437444f2ad38" style="width: 100.0%; height: 100.0%;"><div style="width:100px">제주특별자치도 제주시</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_717b99f0f6f2cba5b8b4cccd44d42b38.setContent(html_1b8c21918a0dd186d8e1437444f2ad38);
+            
+        
+
+        circle_marker_5c427cf7f17ea8cdb3f133cb49c345e3.bindPopup(popup_717b99f0f6f2cba5b8b4cccd44d42b38)
+        ;
+
+        
+    
+    
+            circle_marker_5c427cf7f17ea8cdb3f133cb49c345e3.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21e7fa02101c73e7b4d52b11ff4a7015 = L.marker(
+                [33.489011, 126.498302],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_9c91e498cc99f9e4dbbb7dfab24e2fda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f4d6d2e3d1ba649cc8fddf84264b2fb = $(`<div id="html_3f4d6d2e3d1ba649cc8fddf84264b2fb" style="width: 100.0%; height: 100.0%;"><div style="width:100px">제주특별자치도 제주시</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_9c91e498cc99f9e4dbbb7dfab24e2fda.setContent(html_3f4d6d2e3d1ba649cc8fddf84264b2fb);
+            
+        
+
+        marker_21e7fa02101c73e7b4d52b11ff4a7015.bindPopup(popup_9c91e498cc99f9e4dbbb7dfab24e2fda)
+        ;
+
+        
+    
+    
+            marker_21e7fa02101c73e7b4d52b11ff4a7015.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9d3315956bd0560d4b72ccc775914d16 = L.circleMarker(
+                [37.289382, 127.006088],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_c46ae041818eaf65f32426ab5c001fab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ca096927add0c021d38d1b02e5f80d5 = $(`<div id="html_3ca096927add0c021d38d1b02e5f80d5" style="width: 100.0%; height: 100.0%;"><div style="width:100px">경기도 수원시 장안구 송죽동</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_c46ae041818eaf65f32426ab5c001fab.setContent(html_3ca096927add0c021d38d1b02e5f80d5);
+            
+        
+
+        circle_marker_9d3315956bd0560d4b72ccc775914d16.bindPopup(popup_c46ae041818eaf65f32426ab5c001fab)
+        ;
+
+        
+    
+    
+            circle_marker_9d3315956bd0560d4b72ccc775914d16.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c610bfb2b982d5f850b409e7553b8f91 = L.marker(
+                [37.289382, 127.006088],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_d7bf4e0e867cfd19bdfcb7c29611ae9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c82d84f9cb7ad8cda1b46dc4535f8fd = $(`<div id="html_1c82d84f9cb7ad8cda1b46dc4535f8fd" style="width: 100.0%; height: 100.0%;"><div style="width:100px">경기도 수원시 장안구 송죽동</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_d7bf4e0e867cfd19bdfcb7c29611ae9b.setContent(html_1c82d84f9cb7ad8cda1b46dc4535f8fd);
+            
+        
+
+        marker_c610bfb2b982d5f850b409e7553b8f91.bindPopup(popup_d7bf4e0e867cfd19bdfcb7c29611ae9b)
+        ;
+
+        
+    
+    
+            marker_c610bfb2b982d5f850b409e7553b8f91.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1b7ee2d83b0f5db39caf2ba924739656 = L.circleMarker(
+                [36.797582, 127.176146],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_b71b0770f5ba5a83538983430feda207 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96cd282bbd8c8a5aec3e8f11244f0b98 = $(`<div id="html_96cd282bbd8c8a5aec3e8f11244f0b98" style="width: 100.0%; height: 100.0%;"><div style="width:100px">충청남도 천안시 동남구 신안동</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_b71b0770f5ba5a83538983430feda207.setContent(html_96cd282bbd8c8a5aec3e8f11244f0b98);
+            
+        
+
+        circle_marker_1b7ee2d83b0f5db39caf2ba924739656.bindPopup(popup_b71b0770f5ba5a83538983430feda207)
+        ;
+
+        
+    
+    
+            circle_marker_1b7ee2d83b0f5db39caf2ba924739656.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b8d1aaa0b7e4c037e656947d9ec382f = L.marker(
+                [36.797582, 127.176146],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_949188157f3655c4b81115fdc7c89007 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_343e14d7cab851e0abc62da8955c10ab = $(`<div id="html_343e14d7cab851e0abc62da8955c10ab" style="width: 100.0%; height: 100.0%;"><div style="width:100px">충청남도 천안시 동남구 신안동</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_949188157f3655c4b81115fdc7c89007.setContent(html_343e14d7cab851e0abc62da8955c10ab);
+            
+        
+
+        marker_0b8d1aaa0b7e4c037e656947d9ec382f.bindPopup(popup_949188157f3655c4b81115fdc7c89007)
+        ;
+
+        
+    
+    
+            marker_0b8d1aaa0b7e4c037e656947d9ec382f.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c6bcb71d62aad763d429b60e7c7b384f = L.circleMarker(
+                [36.307428, 127.389012],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_fe149a2d1835cbb8d9cd638838207b27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2972c2685665478103017911071f0a93 = $(`<div id="html_2972c2685665478103017911071f0a93" style="width: 100.0%; height: 100.0%;"><div style="width:100px">대전광역시 중구 산성동</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_fe149a2d1835cbb8d9cd638838207b27.setContent(html_2972c2685665478103017911071f0a93);
+            
+        
+
+        circle_marker_c6bcb71d62aad763d429b60e7c7b384f.bindPopup(popup_fe149a2d1835cbb8d9cd638838207b27)
+        ;
+
+        
+    
+    
+            circle_marker_c6bcb71d62aad763d429b60e7c7b384f.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47bb8e43cdbb5e31c2997c79ad500eef = L.marker(
+                [36.307428, 127.389012],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_ebe3855333dae3445214e4aba46f637f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9a293eacb5071a6bbcc1cdf5abcb20d0 = $(`<div id="html_9a293eacb5071a6bbcc1cdf5abcb20d0" style="width: 100.0%; height: 100.0%;"><div style="width:100px">대전광역시 중구 산성동</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_ebe3855333dae3445214e4aba46f637f.setContent(html_9a293eacb5071a6bbcc1cdf5abcb20d0);
+            
+        
+
+        marker_47bb8e43cdbb5e31c2997c79ad500eef.bindPopup(popup_ebe3855333dae3445214e4aba46f637f)
+        ;
+
+        
+    
+    
+            marker_47bb8e43cdbb5e31c2997c79ad500eef.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_56dd3bc3cebd0d4f5558243acfd9a60e = L.circleMarker(
+                [35.80952, 128.519679],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_3c8d76cfbad3aee2b252ee327327b500 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7776904bc4eb40cde34f4bd155323c48 = $(`<div id="html_7776904bc4eb40cde34f4bd155323c48" style="width: 100.0%; height: 100.0%;"><div style="width:100px">대구광역시 달성군 화원읍 명곡리</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_3c8d76cfbad3aee2b252ee327327b500.setContent(html_7776904bc4eb40cde34f4bd155323c48);
+            
+        
+
+        circle_marker_56dd3bc3cebd0d4f5558243acfd9a60e.bindPopup(popup_3c8d76cfbad3aee2b252ee327327b500)
+        ;
+
+        
+    
+    
+            circle_marker_56dd3bc3cebd0d4f5558243acfd9a60e.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_443f2ed4aaa3a9933ef93208c1b83d76 = L.marker(
+                [35.80952, 128.519679],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_b3fa43cd15e92736cf87e30c9c58cd06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00cb24565c455146f5b1318e577cb822 = $(`<div id="html_00cb24565c455146f5b1318e577cb822" style="width: 100.0%; height: 100.0%;"><div style="width:100px">대구광역시 달성군 화원읍 명곡리</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_b3fa43cd15e92736cf87e30c9c58cd06.setContent(html_00cb24565c455146f5b1318e577cb822);
+            
+        
+
+        marker_443f2ed4aaa3a9933ef93208c1b83d76.bindPopup(popup_b3fa43cd15e92736cf87e30c9c58cd06)
+        ;
+
+        
+    
+    
+            marker_443f2ed4aaa3a9933ef93208c1b83d76.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e86fa3e6d91e353d7b080ee6faf11cd7 = L.circleMarker(
+                [35.824678, 128.736812],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_42bbda751c1c3ed5a41a032a0d899cc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b035a39dfb529a00ec93eaef8e366a70 = $(`<div id="html_b035a39dfb529a00ec93eaef8e366a70" style="width: 100.0%; height: 100.0%;"><div style="width:100px">경상북도 경산시 계양동</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_42bbda751c1c3ed5a41a032a0d899cc0.setContent(html_b035a39dfb529a00ec93eaef8e366a70);
+            
+        
+
+        circle_marker_e86fa3e6d91e353d7b080ee6faf11cd7.bindPopup(popup_42bbda751c1c3ed5a41a032a0d899cc0)
+        ;
+
+        
+    
+    
+            circle_marker_e86fa3e6d91e353d7b080ee6faf11cd7.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f0bbcfd007896f4c5b946235ed004522 = L.marker(
+                [35.824678, 128.736812],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_3fd492eca37f9fb5eec447a5d101ef44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd34358f1e3a707cdbe3642242166235 = $(`<div id="html_cd34358f1e3a707cdbe3642242166235" style="width: 100.0%; height: 100.0%;"><div style="width:100px">경상북도 경산시 계양동</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_3fd492eca37f9fb5eec447a5d101ef44.setContent(html_cd34358f1e3a707cdbe3642242166235);
+            
+        
+
+        marker_f0bbcfd007896f4c5b946235ed004522.bindPopup(popup_3fd492eca37f9fb5eec447a5d101ef44)
+        ;
+
+        
+    
+    
+            marker_f0bbcfd007896f4c5b946235ed004522.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e617f359b7251aa95a5acf4ccfb99116 = L.circleMarker(
+                [35.16054, 126.892892],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_e0d5bc259619231f74be19a98568ab2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e04df4e3c270f2c646329b221975d70e = $(`<div id="html_e04df4e3c270f2c646329b221975d70e" style="width: 100.0%; height: 100.0%;"><div style="width:100px">광주광역시 서구 풍암동</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_e0d5bc259619231f74be19a98568ab2d.setContent(html_e04df4e3c270f2c646329b221975d70e);
+            
+        
+
+        circle_marker_e617f359b7251aa95a5acf4ccfb99116.bindPopup(popup_e0d5bc259619231f74be19a98568ab2d)
+        ;
+
+        
+    
+    
+            circle_marker_e617f359b7251aa95a5acf4ccfb99116.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53ede353dac75f1a301478626121e5ed = L.marker(
+                [35.16054, 126.892892],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_30d04776abc202214666cba000bab8aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adf42a4a8598e0c24c6786a40e830f65 = $(`<div id="html_adf42a4a8598e0c24c6786a40e830f65" style="width: 100.0%; height: 100.0%;"><div style="width:100px">광주광역시 서구 풍암동</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_30d04776abc202214666cba000bab8aa.setContent(html_adf42a4a8598e0c24c6786a40e830f65);
+            
+        
+
+        marker_53ede353dac75f1a301478626121e5ed.bindPopup(popup_30d04776abc202214666cba000bab8aa)
+        ;
+
+        
+    
+    
+            marker_53ede353dac75f1a301478626121e5ed.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_85411da93db0e3a343b77d6e2b3892b9 = L.circleMarker(
+                [35.158603, 128.11842],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_5dd56eb3b780a065719e7394ba033152 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_67d9b74c14b8e679b1d61e194953c7c0 = $(`<div id="html_67d9b74c14b8e679b1d61e194953c7c0" style="width: 100.0%; height: 100.0%;"><div style="width:100px">경상남도 진주시 금산면</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_5dd56eb3b780a065719e7394ba033152.setContent(html_67d9b74c14b8e679b1d61e194953c7c0);
+            
+        
+
+        circle_marker_85411da93db0e3a343b77d6e2b3892b9.bindPopup(popup_5dd56eb3b780a065719e7394ba033152)
+        ;
+
+        
+    
+    
+            circle_marker_85411da93db0e3a343b77d6e2b3892b9.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_087d0ae91c863b055ba41911f21eee7c = L.marker(
+                [35.158603, 128.11842],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_5e28933f660be9300557868edb7cf12f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d7f07f9720486af3f6adde5b9085570 = $(`<div id="html_1d7f07f9720486af3f6adde5b9085570" style="width: 100.0%; height: 100.0%;"><div style="width:100px">경상남도 진주시 금산면</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_5e28933f660be9300557868edb7cf12f.setContent(html_1d7f07f9720486af3f6adde5b9085570);
+            
+        
+
+        marker_087d0ae91c863b055ba41911f21eee7c.bindPopup(popup_5e28933f660be9300557868edb7cf12f)
+        ;
+
+        
+    
+    
+            marker_087d0ae91c863b055ba41911f21eee7c.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_38af96c7ee42790d8c727bec039c409e = L.circleMarker(
+                [35.191329, 128.581915],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_66c3a38eaf8560c9853614acad543d5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e4cf3c0fb8b0b0973f809978b3acbb3 = $(`<div id="html_5e4cf3c0fb8b0b0973f809978b3acbb3" style="width: 100.0%; height: 100.0%;"><div style="width:100px">경상남도 창원시 마산회원구 봉암동</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_66c3a38eaf8560c9853614acad543d5e.setContent(html_5e4cf3c0fb8b0b0973f809978b3acbb3);
+            
+        
+
+        circle_marker_38af96c7ee42790d8c727bec039c409e.bindPopup(popup_66c3a38eaf8560c9853614acad543d5e)
+        ;
+
+        
+    
+    
+            circle_marker_38af96c7ee42790d8c727bec039c409e.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9df8c40fb86f8d2c881da8a4543a2762 = L.marker(
+                [35.191329, 128.581915],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_c8786876cfcca4c59ca856f0e33bbde4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60ed108a35c0b0c9445dc49924d140d1 = $(`<div id="html_60ed108a35c0b0c9445dc49924d140d1" style="width: 100.0%; height: 100.0%;"><div style="width:100px">경상남도 창원시 마산회원구 봉암동</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_c8786876cfcca4c59ca856f0e33bbde4.setContent(html_60ed108a35c0b0c9445dc49924d140d1);
+            
+        
+
+        marker_9df8c40fb86f8d2c881da8a4543a2762.bindPopup(popup_c8786876cfcca4c59ca856f0e33bbde4)
+        ;
+
+        
+    
+    
+            marker_9df8c40fb86f8d2c881da8a4543a2762.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d24c3683c9e88aa834798e344a5f98da = L.circleMarker(
+                [35.374416, 129.08693],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20, "stroke": true, "weight": 3}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_639bf1ae2239f56426aba01748a88d7d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcd029a63aa1b6337c2c5aff5030eee6 = $(`<div id="html_bcd029a63aa1b6337c2c5aff5030eee6" style="width: 100.0%; height: 100.0%;"><div style="width:100px">경상남도 양산시 물금읍 범어리</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_639bf1ae2239f56426aba01748a88d7d.setContent(html_bcd029a63aa1b6337c2c5aff5030eee6);
+            
+        
+
+        circle_marker_d24c3683c9e88aa834798e344a5f98da.bindPopup(popup_639bf1ae2239f56426aba01748a88d7d)
+        ;
+
+        
+    
+    
+            circle_marker_d24c3683c9e88aa834798e344a5f98da.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5625dfc61aa7a792b3e65476eacab776 = L.marker(
+                [35.374416, 129.08693],
+                {}
+            ).addTo(map_9f52e457145622057f24ab43415fc03a);
+        
+    
+        var popup_0ad47cd20db0e424f4d17dc03578a109 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9294608023e931efae30567956b19482 = $(`<div id="html_9294608023e931efae30567956b19482" style="width: 100.0%; height: 100.0%;"><div style="width:100px">경상남도 양산시 물금읍 범어리</br> 발견날짜:중국 줄무늬 목 거북</div> </div>`)[0];
+                popup_0ad47cd20db0e424f4d17dc03578a109.setContent(html_9294608023e931efae30567956b19482);
+            
+        
+
+        marker_5625dfc61aa7a792b3e65476eacab776.bindPopup(popup_0ad47cd20db0e424f4d17dc03578a109)
+        ;
+
+        
+    
+    
+            marker_5625dfc61aa7a792b3e65476eacab776.bindTooltip(
+                `<div>
+                     Click!!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
